@@ -73,3 +73,122 @@ header {
     padding-left: 16px;
     border-left: 16px solid #F16D7F;
 }
+.offer_flex{
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 470px;
+}
+.offer_images{
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+.offer_images .offer_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.offer_text{
+    text-align: center;
+}
+.top_text{
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.bottom_text{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #F16D7F;
+}
+.subtitle_main {
+    color: #222;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 95px;
+    text-align: center;
+}
+.card_box {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(2, 581px);
+    gap: 30px;
+}
+.card {
+    background-color: #F8F8F8;
+}
+.fone_card {
+    height: 420px;
+    background-color: #F7E4E2;
+}
+.img_center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text_main {
+    color: #9F9F9F;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 48px;
+}
+.card_title {
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 24px;
+    margin-bottom: 13px;
+    margin-left: 16px;
+}
+.text_title {
+    color: #5D5D5D;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 16px;
+    margin-right: 29px;
+}
+.price {
+    color: #F16D7F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    margin-left: 16px;
+}
+.button_main {
+    margin-top: 48px;
+    width: 212px;
+    height: 48px;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+    font-size: 16px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #FFF;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
