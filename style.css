@@ -39,6 +39,9 @@ a {
 .burger_menu {
     position: relative;
 }
+.burger__link {
+    padding-bottom: 40px;
+}
 .menu {
     display: none;
     position: absolute;
