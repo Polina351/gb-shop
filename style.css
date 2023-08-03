@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     box-sizing: border-box;
@@ -252,7 +253,7 @@ a {
 .card_box {
     display: grid;
     grid-template-columns: repeat(3, 360px);
-    grid-template-rows: repeat(2, 581px);
+    /* grid-template-rows: repeat(2, 581px); */
     gap: 30px;
 }
 .card {
