@@ -1,0 +1,103 @@
+.registration__main {
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+.registration__form {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+.registration__subtitle {
+    color: #222;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20.5px;
+}
+.registration__input-text {
+    width: 360px;
+    height: 45px;
+    padding: 12.5px 17px 12.5px;
+}
+.input-box input:not(:last-of-type) {
+    margin-bottom: 20.5px;
+}
+.registration__input-text-top {
+    margin-bottom: 34.5px;
+}
+
+input[type = radio], label{
+    background: #FFF;
+    accent-color: grey;
+    width: 17px;
+    height: 17px;
+    color: #000;
+    font-family: Lato;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+}
+.registration__radio-box {
+    margin-bottom: 34px;
+    display: flex;
+    gap: 20px;
+}
+.radio-btn-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.registration__input-text-botton {
+    margin-bottom: 15.5px;
+}
+.text-for-password {
+    color: #B1B1B1;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 39px;
+}
+.registration__button {
+    width: 167px;
+    background-color: #F16D7F;
+    padding-left: 29px;
+    padding-right: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    color: #FFF;
+    border: 1px solid #FF6A6A;
+}
+.registration__main {
+    display: flex;
+    justify-content: space-between;
+}
+.registration__info {
+    width: 652px;
+}
+.info__subtitle {
+    margin-bottom: 22px;
+}
+.info__text {
+    margin-bottom: 21px;
+}
+.info__elems {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.registration__info, .info__subtitle {
+    color: #000;
+    font-size: 24px;
+    font-weight: 300;
+}
+.info__elem::before {
+    content: url(../img/icons/list_type_icon.svg);
+    margin-right: 23px;
+}
+
