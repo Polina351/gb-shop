@@ -495,6 +495,10 @@ a {
     .label {
         margin-top: 138px;
     }
+    .filter {
+        justify-content: space-between;
+        gap: 0;
+    }
     .top {
         height: 385px;
     }
@@ -519,9 +523,19 @@ a {
     }
     .card_box {
         grid-template-columns: repeat(2, 360px);
-        grid-template-rows: repeat(3, 581px);
+        grid-template-rows: repeat(4, 581px);
+        grid-auto-rows: 0;
         gap: 16px;
+        overflow-y: hidden;
     }
+    .card_box-row1 {
+        grid-template-rows: repeat(1, 581px);
+    }
+    .card_box::-webkit-scrollbar {
+        width: 7px;
+        background-color: #FFF;
+    }
+
     .button_main {
         margin-top: 32px;
         margin-bottom: 65px;
@@ -571,6 +585,12 @@ a {
     .label {
         margin-top: 148px;
     }
+    .breadcrumb-box {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+    }
     .offer_flex {
         padding-left: 16px;
         padding-right: 16px;
@@ -594,10 +614,17 @@ a {
     .card_box {
         grid-template-columns: repeat(1, 359px);
         grid-template-rows: repeat(3, 581px);
+        grid-auto-rows: auto;
         gap: 16px;
         margin-left: 8px;
         margin-right: 8px;
         justify-content: center;
+    }
+    .card_box-row1 {
+        grid-template-rows: repeat(2, 581px);
+        overflow-y: hidden;
+        grid-auto-rows: 0;
+
     }
     .button_main {
         margin-top: 40px;

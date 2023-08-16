@@ -78,7 +78,7 @@ input[type = radio], label{
     justify-content: space-between;
 }
 .registration__info {
-    width: 652px;
+    max-width: 652px;
 }
 .info__subtitle {
     margin-bottom: 22px;
@@ -101,3 +101,16 @@ input[type = radio], label{
     margin-right: 23px;
 }
 
+@media (max-width: 1024px) {
+    .registration__main {
+        gap: 23px;
+    }
+    .registration__info, .info__subtitle {
+        font-size: 16px;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .registration__main {
+        flex-direction: column;
+    }
+}
