@@ -67,7 +67,7 @@
 .discripyion_line {
     margin-bottom: 65px;
     height: 1px;
-    width: 641px;
+    max-width: 641px;
     background-color: #EAEAEA;
 }
 .discripyion__menu {
@@ -100,11 +100,10 @@
 }
 @media (min-width: 320px) and (max-width: 767px) {
     .carousel {
-        max-width: 100%px;
         margin: 0 auto;
     }
     .carousel__image {
-        max-width: 78%;
+        max-width: 75%;
     }
     .carousel {
         height: 624px;
