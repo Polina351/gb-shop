@@ -184,9 +184,15 @@ a {
     padding-bottom: 65px;
 }
 .filter__category {
+    display: flex;
+    align-items: center;
+    gap: 11px;
     color: #000;
     font-size: 14px;
     font-weight: 600;
+}
+.filter_big-svg {
+    display: none;
 }
 .filter__sort {
     display: flex;
@@ -258,6 +264,23 @@ a {
 }
 .card {
     background-color: #F8F8F8;
+    position: relative;
+}
+.card:hover .fone_card{
+    filter: brightness(30%);
+}
+.card__img, .fone_card {
+    transition: filter 0.3s;
+}
+.card:hover .card__img{
+    filter: brightness(30%);
+}
+.card:hover .card-add {
+    display: flex;
+    cursor: pointer;
+}
+.card__link {
+    display: block;
 }
 .fone_card {
     height: 420px;
@@ -302,6 +325,25 @@ a {
     margin-top: 18px;
     margin-bottom: 20px;
     margin-left: 16px;
+}
+.card-add-center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.card-add {
+    height: 44px;
+    display: none;
+    gap: 11px;
+    position: absolute;
+    top: 188px;
+    align-items: center;
+    padding: 12px 16px 12px 13px;
+    border: 1px solid #FFF;
+    background: none;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
 }
 .pagination {
     display: flex;
@@ -471,16 +513,24 @@ a {
     width: 31.451px;
     height: 32px;
     background-color: #FFF;
+    transition: all 0.3s;
 }
 .copyright__links {
     display: flex;
     gap: 8px;
 }
+.copyright__link:hover .icon-fill{
+    fill: #FFF;
+}
+.copyright__link:hover {
+    background-color: #F16D7F;;
+}
 
 
 @media (max-width: 1024px) {
     .container {
-        max-width: 735px;
+        max-width: 754px;
+        padding: 0 9px;
         margin: 0 auto;
     }
     .top_image {
@@ -569,6 +619,11 @@ a {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+    .container {
+        max-width: 754px;
+        padding: 0 9px;
+        margin: 0 auto;
+    }
     .none {
         display: none;
     }
@@ -610,6 +665,15 @@ a {
     }
     .subtitle_main {
         margin-top: 64px;
+    }
+    .filter-category-none {
+        display: none;
+    }
+    .filter_big-svg {
+        display: block;
+    }
+    .filter__elem {
+        font-size: 12px;
     }
     .card_box {
         grid-template-columns: repeat(1, 359px);
@@ -678,5 +742,4 @@ a {
         align-items: center;
         gap: 40px;
     }
-
 }

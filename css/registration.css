@@ -96,9 +96,15 @@ input[type = radio], label{
     font-size: 24px;
     font-weight: 300;
 }
-.info__elem::before {
+/* .info__elem::before {
     content: url(../img/icons/list_type_icon.svg);
     margin-right: 23px;
+} */
+.info__elems {
+    padding-left: 25px;
+}
+.info__elem {
+    list-style-image: url(../img/icons/list_type_icon.svg);
 }
 
 @media (max-width: 1024px) {
