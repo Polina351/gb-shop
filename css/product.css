@@ -14,6 +14,9 @@
     height: 47px;
     background-color: #d8d8d8;
 }
+.carousel__image {
+    max-width: 100%;
+}
 .discription {
     position: relative;
     padding-bottom: 128px;
@@ -49,7 +52,7 @@
 }
 .discripyion__text {
     margin-bottom: 32px;
-    width: 555px;
+    max-width: 555px;
     color: #5E5E5E;
     text-align: center;
     font-size: 14px;
@@ -94,4 +97,16 @@
     font-weight: 400;
     line-height: normal;
     background: #FFF;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .carousel {
+        max-width: 100%px;
+        margin: 0 auto;
+    }
+    .carousel__image {
+        max-width: 78%;
+    }
+    .carousel {
+        height: 624px;
+    }
 }
